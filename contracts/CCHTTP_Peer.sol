@@ -106,6 +106,19 @@ abstract contract CCHTTP_Peer is ICCTCP_Consumer, Ownable{
     mapping (address host => connectionStateInfo) public CCTCP_Hosts_Connections;
 
     //TODO constructor 
+    constructor(){}
+
+    function initialize(
+        address _CCIP_Host,
+        address _Link_Token,
+        uint64 _thisChainId
+    ) public {
+        CCTCP_Host = _CCIP_Host;
+        Link_Token = _Link_Token;
+        thisChainId = _thisChainId;
+    }
+
+    //TODO: init other chains
 
 
     //To be called from CCTCP Host

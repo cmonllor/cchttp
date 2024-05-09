@@ -2,7 +2,7 @@
 pragma solidity ^0.8.24;
 
 abstract contract ContractFactory {
-    fucntion create2Contract(
+    function create2Contract(
         bytes memory bytecode,
         bytes32 salt
     ) internal returns (address addr) {
