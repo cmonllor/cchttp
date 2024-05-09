@@ -1,0 +1,21 @@
+{
+  "name": "cchttp",
+  "version": "1.0.0",
+  "description": "Cross-Chain Hyper-Token Transfer Protocol",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CCIP",
+    "chainlink"
+  ],
+  "author": "cmonllor",
+  "license": "ISC",
+  "dependencies": {
+    "@chainlink/contracts": "^1.1.0",
+    "@chainlink/contracts-ccip": "^1.4.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.12.1"
+  }
+}
