@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-abstarct contract ContractFactory {
+abstract contract ContractFactory {
     fucntion create2Contract(
         bytes memory bytecode,
         bytes32 salt
