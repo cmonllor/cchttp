@@ -17,7 +17,7 @@ contract CCTCP_Host is OwnerIsCreator, CCIPReceiver {
     event NonRevertError(string message);
     
     enum CCTCP_Sement_Status{
-        Untracked, // 0
+        Untracked, // 0npm install solc@0.8.24
         Sent, // 1
         Received, // 2
         Acknowledged, // 3
@@ -96,8 +96,7 @@ contract CCTCP_Host is OwnerIsCreator, CCIPReceiver {
         _;
     }
 
-
-    constructor (address _CCIP_router, address _default_CCIP_ops_token) CCIPReceiver(_CCIP_router) {
+    constructor(address _CCIP_router, address _default_CCIP_ops_token) CCIPReceiver(_CCIP_router)  {
         CCIP_router = _CCIP_router;
         default_CCIP_ops_token = _default_CCIP_ops_token;
     }
